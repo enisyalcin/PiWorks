@@ -44,7 +44,7 @@ public class MaxSumPath {
         else if (row == (LINE_COUNT - 1)) {
             return arr[row][col];
         }
-        // Path end. Because left and right is prime number.
+        // End of the path. Because left and right is prime number.
         if (arr[row][col]==-1 || (arr[row + 1][col]==-1 && arr[row + 1][col + 1]==-1)) return Integer.MIN_VALUE;
 
         return arr[row][col] + Math.max(findMaxPath(row + 1, col),findMaxPath(row + 1, col+1));
