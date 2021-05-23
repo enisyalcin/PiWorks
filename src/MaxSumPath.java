@@ -11,10 +11,10 @@ public class MaxSumPath {
 
     public static void main(String[] args) {
 
-        int result=MaxSumPath.findMaxSum("example1.txt");
+        int result=findMaxSum("example1.txt");
         System.out.println("Example 1 - Result:"+result);
 
-        result=MaxSumPath.findMaxSum("example2.txt");
+        result=findMaxSum("example2.txt");
         System.out.println("Example 2 - Result:"+result);
     }
 
@@ -91,7 +91,7 @@ public class MaxSumPath {
     private static void printData(){
         for (int i=0;i<LINE_COUNT;i++){
             for (int j=0;j<LINE_COUNT;j++){
-                System.out.format("%2d ",arr[i][j]);
+                System.out.format("%5d ",arr[i][j]);
             }
             System.out.println();
         }
